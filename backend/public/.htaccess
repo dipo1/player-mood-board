@@ -1,0 +1,15 @@
+# Required only for Apache server (enable CORS / routing rules)
+
+IndexIgnore *
+
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    #Options +FollowSymLinks
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+
+    ErrorDocument 404 /index.php
+</IfModule>

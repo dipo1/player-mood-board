@@ -1,0 +1,27 @@
+# Node modules (if any accidentally placed here)
+node_modules/
+
+# PHP-related
+*.log
+*.cache
+
+# SQLite database files
+/db/player_mood_board.db
+
+# Composer (if used in the future)
+vendor/
+composer.lock
+
+# Local environment / temp
+.env
+.env.local
+*.bak
+*.tmp
+
+# Apache / Nginx logs
+logs/
+*.pid
+
+# Coverage/test output
+coverage/
+phpunit.xml
